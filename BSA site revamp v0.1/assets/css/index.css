@@ -1,0 +1,187 @@
+.heading {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 961px) {
+    .heading {
+        width: 100%;
+    }
+}
+.heading h1 {
+    font-size: calc(25px + 5vw);
+}
+.heading h2 {
+    font-size: calc(20px + 1vw);
+}
+
+.contentDiv {
+    position: relative;
+    margin-top: 95vh;
+}
+
+@keyframes bouncing {
+    0% {bottom: 0;}
+    50% {bottom: 20px;}
+    100% {bottom: 0;}
+}
+
+.arrow {
+    animation: bouncing 1s infinite ease-in-out;
+    bottom: 0;
+    color: white;
+    display: block;
+    height: 50px;
+    left: 50%;
+    margin-left: -25px;
+    position: absolute;
+    width: 50px;
+}
+
+.gallery-image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .gallery-image img {
+    height: 250px;
+    width: 350px;
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
+  }
+  
+  .img-box {
+    box-sizing: content-box;
+    margin: 10px;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    position: relative;
+    background-color: white;
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .transparent-box {
+    height: 250px;
+    width: 350px;
+    background-color:rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .img-box:hover img { 
+    transform: scale(1.1);
+  }
+  
+  .img-box:hover .transparent-box {
+    background-color:rgba(0, 0, 0, 0.5);
+  }
+  
+  .img-box:hover .caption {
+    transform: translateY(-20px);
+    opacity: 1.0;
+  }
+  
+  .img-box:hover {
+    cursor: pointer;
+  }
+  
+  .caption > p:nth-child(2) {
+    font-size: 0.8em;
+  }
+  
+  .opacity-low {
+    opacity: 0.5;
+  }
+
+  .contain {
+      width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about {
+    width: 100%;
+    height: auto;    
+    margin-top: 100vh;
+    display: flex;
+    padding-bottom: 5%;
+  }
+
+  .left { 
+    width: 27%;
+    height: auto;
+    min-height: 200px;
+    background-image: url(http://cache.desktopnexus.com/thumbseg/2540/2540956-bigthumbnail.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    transition: .3s;
+  }
+  .left h1 {
+    font-size: calc(20px + 1vw);
+  }
+  .left:hover {
+    color: white;
+  }
+
+    #sponsor {
+      background-image: url(https://wallpaperaccess.com/full/1302164.jpg);
+    }
+
+    #sponsor:hover {
+      background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://wallpaperaccess.com/full/1302164.jpg)
+    }
+
+    #scoutmasterinfo {
+      background-image: url(https://www.teahub.io/photos/full/323-3236413_cool-wilderness-backgrounds.jpg);
+    }
+    #scoutmasterinfo:hover {
+      background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.teahub.io/photos/full/323-3236413_cool-wilderness-backgrounds.jpg)
+
+    }
+  .left:hover {
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.9);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(http://cache.desktopnexus.com/thumbseg/2540/2540956-bigthumbnail.jpg)
+  }
+
+  @media screen and (max-width: 1300px) {
+    .about {
+      display: inherit;
+    }
+    .left {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #sponsor {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .under {
+    width: 100%;
+    background-color: red;
+    height: auto;
+  }
