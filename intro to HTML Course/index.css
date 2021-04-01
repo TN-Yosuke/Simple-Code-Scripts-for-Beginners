@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(space.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+.cool {
+  color: white;
+  font-family: arial;
+  font-size: 7vw;
+  font-weight: lighter;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+h1{
+  color: white;
+  font-family: arial;
+  font-size: ;
+  font-weight: lighter;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+
+button {
+  color: white;
+  font-family: arial;
+  font-size: 20px;
+  font-weight: lighter;
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  border: 5px solid white;
+  border-radius: 0px;
+  background-color: rgba(255,255,255,0.0);
+  width: 10%;
+  height: auto;
+  padding: 1%;
+  outline: none;
+  transition: .3s;
+}
+
+button:hover{
+  cursor: pointer;
+  width: 12%;
+  font-size: 23px;
+}
